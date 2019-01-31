@@ -1,0 +1,143 @@
+    //Page Agenda eventos
+.page-agenda-eventos{
+	.container{
+		// padding: 0px;
+	}
+
+	.eventos-pad{
+		margin-bottom: 140px;
+		margin-top: 140px;
+	}
+}
+
+.eventos-pad.v2{
+	.item{
+		max-width: 820px;
+		transition: all 250ms ease;
+		margin-bottom: 128px;
+
+		&:hover{
+			opacity: 0.5;
+		}
+
+		.data{
+			width: 172px;
+		}
+
+		.content{
+			max-width: 618px;
+		}
+
+		h2{
+			text-align: center;
+			font-size: 30px;
+			margin-top: 16px;
+		}
+		p{
+			line-height: 22px;
+			text-align: left;
+		}
+		.content{
+			width: 100%;
+		}
+	}
+}
+@media(min-width: 992px){
+	.eventos-pad.v2{
+		.item{
+			.content{
+				margin-left: 30px;
+
+				h2{
+					margin-bottom: 16px;
+					text-align: left;
+					margin-top: 0px;
+				}
+
+				p{
+					line-height: 19px;
+					text-align: justify;
+				}
+
+			}
+			footer{
+				width: 100%;
+			}
+		}
+	}
+}
+@media(min-width: 1200px){
+	.eventos-pad.v2{
+		.item{
+			margin-bottom: 60px;
+
+			&:last-child{
+				margin-bottom: 0px;
+			}
+
+			.content{
+				width: 100%;
+
+				height: auto;
+			}
+
+			p{
+				margin: 16px 0px 16px;
+				text-align: left;
+			}
+
+			footer{
+				width: 100%;
+				margin: 0px;
+				position: static;
+			}
+		}
+
+		.btn-ver-mais{
+			margin-top: 24px;
+			margin-left: 50px;
+		}
+	}			
+}
+
+.page-agenda-eventos{
+
+	.eventos-pad{
+
+		.item{
+			color: $corPrim01;
+
+			&:last-child{
+				margin-bottom: 0px;
+			}
+
+			.content{
+				color: #000;
+
+				h2{
+					margin-bottom: 16px;
+				}
+
+				footer{
+					margin-top: 16px;
+					color: $corPrim01;
+				}
+			}
+		}
+		.data{
+			border: 2px solid $corPrim01;
+			border-radius: 12px;
+			padding: 20px;
+
+			.dia{
+				font-size: 54px;
+			}
+		}
+	}
+}
+
+.icon-arrow-verm-1{
+	width: 32px;
+	height: 32px;
+	background-position: -253px -1px;
+}

@@ -1,0 +1,170 @@
+.carousel-ban{
+	height: 500px;
+
+	@media(min-width: 992px){
+		height: 808px;
+	}
+
+
+	.slides{
+		height: 500px;
+
+		@media(min-width: 992px){
+			height: 808px;
+		}
+
+		.item{
+			height: 500px;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			@media(min-width: 992px){
+				height: 808px;
+			}
+
+			a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.slide-area{
+		transition: all 250ms ease;
+		//opacity: 0;
+		transition: all 250ms ease;
+
+		span{
+			&:hover{
+				opacity: 0.6;
+			}
+
+			&:active{
+				opacity: 0;
+			}
+		}
+	}
+
+	.nav--prev, .nav--next{
+		top: 50%;
+		color: $corPrim01;
+		opacity: 1;
+		pointer-events: auto !important;
+		transition: all 250ms ease;
+
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	.nav--next:active,
+	.nav--prev:active{
+		opacity: 0;
+	}
+	@media(min-width: 992px){
+		.nav--prev, .nav--next{
+			border: 1px solid $corPrim01;
+			border-radius: 50%;
+			font-size: 1.5em;
+			transform: scale(0.75);
+			margin-top: -30px;
+		}		
+	}
+
+	@media(min-width: 1300px){
+		.nav--prev{
+			left: 50%;
+			margin-left: -650px;
+		}
+		.nav--next{
+			right: 50%;
+			margin-right: -650px;		
+		}	
+	}
+
+}
+/*.first-slide .nav--prev{
+	opacity: 0.25 !important;
+}
+.last-slide .nav--next{
+	opacity: 0.25 !important;
+}*/
+
+.carousel-ban2{
+	height: 580px;
+
+	@media(min-width: 992px){
+		height: 580px;
+	}
+
+
+	.slides{
+		height: 580px;
+
+		@media(min-width: 992px){
+			height: 580px;
+		}
+
+		.item{
+			height: 580px;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			@media(min-width: 992px){
+				height: 580px;
+			}
+
+			a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.nav--prev, .nav--next{
+		color: $corPrim01;
+		opacity: 1;
+		transition: all 200ms ease;
+
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+	.nav--next:active,
+	.nav--prev:active{
+		opacity: 0;
+	}
+
+	footer{
+		position: absolute;
+		width: 100%;
+		left:0;
+		bottom:0;
+		height: 150px;
+		background: rgba(0,0,0,0.75);
+		color: #fff;
+		text-align: left;
+		font-size: 20.5px;
+		padding-left: 92px;
+		padding-top: 52px;
+
+		@media(min-width: 1200px){
+			max-width: 1036px;
+			margin-left: 12px;			
+		}
+
+		h4{
+			font-family: 'Open Sans Bold';
+			margin-bottom: 8px;
+		}
+
+		p{
+    		font-family: 'Open Sans Light';
+		}
+	}
+}

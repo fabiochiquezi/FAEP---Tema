@@ -1,0 +1,29 @@
+.page-home{
+	.principais-cursos-pad{
+		margin: 64px 0px 85px;
+
+		@media(min-width: 992px){
+			margin: 128px 0px 138px;
+		}
+	}
+
+	.trabalhos-alunos-pad{
+		background: url('../img/bg-pad1.jpg') repeat;
+		width: 100%;
+		padding-top: 115px;
+		padding-bottom: 108px;
+
+		.title-pad{
+			color: #fff;
+
+			h1{
+				color: #fff;
+			}
+		}
+	}
+
+	.saiba-mais-pad{
+		margin-top: 90px;
+		margin-bottom: 100px;
+	}
+}

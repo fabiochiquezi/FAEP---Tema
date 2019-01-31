@@ -1,0 +1,157 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.52
+* STEP-1 START @ 10:24:52
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	5.6.35 | SAPI: apache2handler
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache/2.4.33 (Win64) PHP/5.6.35
+DOC ROOT:	C:/wamp64/www/faep/wp
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	http://localhost/faep/wp/installer.php
+SAFE MODE :	0
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	20181024_alphachannel_41c1ca44ab459cf88781_20190131102224_archive.zip
+SIZE:	20.7MB
+ZIP:	Enabled (ZipArchive Support)
+
+>>> START EXTRACTION:
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2188
+    [filename] => C:\wamp64\www\faep\wp\20181024_alphachannel_41c1ca44ab459cf88781_20190131102224_archive.zip
+    [comment] => 
+)
+File timestamp is 'Current' mode: 2019-01-31 10:24:57
+<<< EXTRACTION COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.190131102457.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 10:24:57 - RUNTIME: 4.4199 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 10:25:25
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.21 -- Build Server: 5.7.21
+FILE SIZE:	dup-database__41c1ca4-31102224.sql (738.88KB) - dup-installer-data__41c1ca4-31102224.sql (738.88KB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+NEW SQL FILE:	[C:/wamp64/www/faep/wp/dup-installer-data__41c1ca4-31102224.sql]
+COLLATE RESET:	On
+
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	0
+QUERIES RAN:	2272
+
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_duplicator_packages: (2)
+wp_links: (0)
+wp_options: (145)
+wp_postmeta: (1851)
+wp_posts: (189)
+wp_term_relationships: (32)
+wp_term_taxonomy: (6)
+wp_termmeta: (0)
+wp_terms: (6)
+wp_usermeta: (24)
+wp_users: (1)
+
+Removed '23' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 0.6173 sec.
+STEP-2 COMPLETE @ 10:25:26 - RUNTIME: 0.6478 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 10:25:40
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments^ (0)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (122)
+wp_postmeta~ (1851)
+wp_posts~ (189)
+wp_term_relationships~ (32)
+wp_term_taxonomy~ (6)
+wp_termmeta^ (0)
+wp_terms~ (6)
+wp_usermeta~ (24)
+wp_users~ (1)
+--------------------------------------
+Search1:	'C:/wamp64/www/wp-alpha-channel' 
+Change1:	'C:/wamp64/www/faep/wp' 
+Search2:	'C:\/wamp64\/www\/wp-alpha-channel' 
+Change2:	'C:\/wamp64\/www\/faep\/wp' 
+Search3:	'C%3A%2Fwamp64%2Fwww%2Fwp-alpha-channel%2F' 
+Change3:	'C%3A%2Fwamp64%2Fwww%2Ffaep%2Fwp%2F' 
+Search4:	'C:\wamp64\www\wp-alpha-channel' 
+Change4:	'C:/wamp64/www/faep/wp' 
+Search5:	'//localhost/wp-alpha-channel' 
+Change5:	'//localhost/faep/wp' 
+Search6:	'\/\/localhost\/wp-alpha-channel' 
+Change6:	'\/\/localhost\/faep\/wp' 
+Search7:	'%2F%2Flocalhost%2Fwp-alpha-channel' 
+Change7:	'%2F%2Flocalhost%2Ffaep%2Fwp' 
+SCANNED:	Tables:13 	|	 Rows:2231 	|	 Cells:12501 
+UPDATED:	Tables:1 	|	 Rows:191 	|	 Cells:191 
+ERRORS:		0 
+RUNTIME:	0.191000 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+No Notices Found
+
+
+STEP 3 COMPLETE @ 10:25:40 - RUNTIME: 0.2161 sec.
+
+

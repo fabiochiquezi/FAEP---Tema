@@ -1,0 +1,54 @@
+.IE{
+	.single-post{
+		.box-img{
+			height: 172px;
+			text-align: center;
+
+			img{
+				width: 300px;
+				margin: 0 auto;
+			}
+
+			@media(min-width: 640px){
+				height: 252px;
+
+				img{
+					width: 450px;
+					margin: 0 auto;
+				}				
+			}
+
+			@media(min-width: 768px){
+				height: 335px;
+				
+				img{
+					width: 600px;
+					margin: 0 auto;
+				}				
+			}
+
+			@media(min-width: 992px){
+				height: 400px;
+				
+				img{
+					width: 714px;
+					margin: 0 auto;
+				}				
+			}
+		}
+	}
+
+	.page-revista{
+		.imagem-revista{
+			text-align: center;
+
+			img{
+				width: 300px;
+
+				@media(min-width: 768px){
+					width: auto;
+				}
+			}
+		}
+	}
+}

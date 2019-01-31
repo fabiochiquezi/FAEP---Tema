@@ -1,0 +1,526 @@
+/*///// Globals /////*/
+
+//Váriaveis
+$corPrim01: #a8c833;
+$corPrim02: #272a32;
+
+$corSec01: #fff;
+$corSec02: #000;
+
+
+/* Geral */
+html, body{
+	font-family: 'Open Sans';
+	font-size: 16px;
+}
+
+a{
+	color: $corPrim01;
+	transition: all 200ms ease;
+
+	&:hover{
+		color: $corSec02;
+	}
+}
+
+
+// Helpers
+.w-100{
+	width: 100%;
+}
+
+
+// Icons
+.icon{
+	background: url('../img/sprite.png');
+	display: inline-block;
+}
+.icon-tel{
+	background-position: 0px 0px;
+	height: 16px;
+	width: 16px;
+}
+
+.icon-whats{
+	background-position: -21px -1px;
+	height: 20px;
+	width: 20px;	
+}
+
+.icon-facebook{
+	background-position: -49px -1px;
+	height: 16px;
+	width: 16px;	
+}
+
+.icon-youtube{
+	background-position: -75px -3px;
+	height: 12px;
+	width: 17px;	
+}
+
+.icon-linkedin{
+	background-position: -103px -1px;
+	height: 16px;
+	width: 16px;	
+}
+
+.icon-instagram{
+	background-position: -130px -1px;
+	height: 16px;
+	width: 16px;	
+}
+
+.icon-menu{
+	background-position: -0px -30px;
+	height: 39px;
+	width: 39px;	
+}
+
+.icon-search{
+	width: 17px;
+	height: 17px;
+	background-position: -41px -30px;
+}
+.icon-lap-reg{
+	width: 51px;
+	height: 50px;
+	background-position: -0px -77px;
+}
+.icon-mark{
+	width: 12px;
+	height: 18px;
+	background-position: -157px -1px;
+}
+.icon-tel{
+	width: 15px;
+	height: 15px;
+	background-position: -175px -1px;
+}
+.icon-whats2{
+	width: 15px;
+	height: 15px;	
+	background-position: -197px -1px;
+}
+.icon-horario{
+	width: 23px;
+	height: 23px;	
+	background-position: -217px -0px;
+}
+.icon-arrow1{
+	width: 7px;
+	height: 14px;
+	background-position: -242px -1px;
+}
+
+
+.btn1{
+	background: $corPrim01;
+	color: #fff;
+	padding: 9px 7px;
+}
+.icon-preferencial{
+	width: 94px;
+	height: 94px;
+	background-position: -27px -496px;
+}
+.active{
+	.icon-preferencial{
+		width: 94px;
+		height: 94px;
+		background-position: -27px -380px;
+	}	
+}
+
+.icon-distancia{
+	width: 91px;
+	height: 91px;
+	background-position: -133px -499px;
+}
+.active{
+	.icon-distancia{
+		width: 91px;
+		height: 91px;
+		background-position: -133px -382px;
+	}	
+}
+
+.icon-individual{
+	height: 78px;
+	width: 78px;
+	background-position: -240px -512px;
+}
+.active{
+	.icon-individual{
+		height: 78px;
+		width: 78px;
+		background-position: -240px -402px;
+	}
+}
+
+.icon-company{
+	width: 105px;
+	height: 72px;
+	background-position: -343px -517px;
+}
+.active{
+	.icon-company{
+		width: 105px;
+		height: 72px;
+		background-position: -343px -402px;
+	}	
+}
+/*
+.icon-docs{
+	width: 32px;
+	height: 39px;
+	background-position: -292px -0px;
+}
+*/
+
+.page-interna{
+	padding: 64px 0px;
+}
+
+
+
+
+/**************/
+	/**************/
+		/* Padrões */
+	/**************/
+/**************/
+
+
+
+/******* Inf Base - Header *******/
+.inf-base{
+	li{
+		margin-left: 15px;
+
+		&:first-child{
+			margin-left: 0px;
+		}
+		i{
+			margin-right: 7px;
+		}
+	}
+}
+
+
+
+/******* Social Media - Header *******/
+
+.social-media1{
+	li{
+		margin-left: 12px;
+
+		&:first-child{
+			margin-left: 0px;
+		}
+	}
+}
+
+
+
+/******* Forms - Padrão *******/
+.form-pad{
+
+	input{
+		outline: none;
+		border: none;
+	}
+
+	.enviar-hidden{
+		overflow: hidden;
+	}
+
+	.erro-form{
+		width: 100%;
+		display: none;
+
+		p{
+			color: red;
+		}
+	}
+
+	.input-error{
+		border: 2px solid red !important;
+	}
+}
+
+/******* Forms - Search *******/
+.search-form{
+	a{
+		color: #fff;
+		background: $corPrim02;
+		padding: 14px 10px;
+		font-size: 8.5px;
+		font-family: 'Open Sans Bold';
+
+		&:hover{
+			opacity: 0.9;
+		}
+	}
+
+	.container-input{
+		position: relative;
+		width: 50%;
+		max-width: 500px;
+		
+		input{
+			padding: 10px 5px;
+			padding-left: 6px;
+			padding-right: 42px;
+			width: 100%;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+
+			@media(min-width: 470px){
+				padding-left: 42px;
+			}
+		}
+
+		i{
+			position: absolute;
+			z-index: 10;
+			left: 15px;
+			top: 8.5px;
+			display: none;
+
+			@media(min-width: 470px){
+				display:block;
+			}
+		}
+	}
+
+	input.enviar-hidden{
+		border-radius-left-top: 5px;
+		border-radius-left-bottom: 5px;
+		visibility: hidden;
+		position: absolute;
+	}
+
+	.loader1{
+		width: auto;
+		height: auto;
+		position: absolute;
+		right: 12px;
+		top: 7px;
+		opacity: 0;
+	}
+
+	@media(min-width: 768px){
+
+		a{
+			height: 50px;
+			padding: 21px 28px;
+			font-size: 12.5px;
+		}
+
+		.container-input{
+			input{
+				height: 50px;
+				padding-left: 42px;
+			}
+
+			i{
+				left: 15px;
+				top: 17.5px;
+			}
+		}
+
+		.loader1{
+			top: 14px;
+		}
+	}
+
+	.erro-form{
+		text-align: center;
+
+		p{
+			margin-top: 16px;
+		}
+	}
+}
+
+
+
+
+/******* Title *******/
+.title-pad{
+	text-align:center;
+	width: 100%;
+	margin-bottom: 64px;
+
+	h1{
+		font-size: 37.5px;
+		line-height: 45px;
+    	font-family: 'Open Sans Bold';
+    	color: $corPrim02;
+    	//margin-bottom: 20px;
+
+		span{
+			color: $corPrim01;
+		}
+
+	}
+
+
+	p{
+		font-family: 'Open Sans Light';
+		font-size: 20.5px;
+		line-height: 26px;
+		max-width: 845px;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+/******* Principais Cursos *******/
+.principais-cursos-pad{
+	li{
+		position: relative;
+		margin-bottom: 32px;
+		border-radius: 10px;
+		overflow: hidden;
+		width: 100%;
+		max-width: 327px;
+		margin-left: auto;
+		margin-right: auto;
+
+		a{
+			transition: all 250ms ease;
+			
+			&:hover{
+				.overlay{
+					opacity: 1;
+				}
+			}
+		}
+
+		.overlay{
+			position: absolute;
+			width: 100%;
+			height: 99%;
+			left: 0;
+			top: 0;
+			z-index: 5;
+			opacity: 0;
+			background-color: rgba(0,0,0,0.4);
+			transition: all 250ms ease;
+			border-radius: 10px;
+		}
+
+		i{
+			margin: 10px 20px;
+		}
+
+		.content{
+			position: absolute;
+			bottom: 20px;
+			z-index: 10;
+			color: #fff;
+		}
+		.nome-espec{
+			margin-left: 20px;
+			border-left: 3px solid $corPrim02;
+			padding-left: 8px;
+
+			span{
+				display: inherit;
+				padding-left: 8px;
+				font-size: 18px;
+				width: max-content;
+				@media(max-width: 360px){
+					font-size: 16px;
+				}
+			}
+
+			span:last-child{
+				background: $corPrim02;
+				margin-top: 8px;
+				padding: 8px;
+				font-size: 12.5px;
+			}
+		}
+	}
+
+	@media(min-width: 992px){
+		.container{
+			max-width: 1028px;
+		}
+		li{
+			width: 31%;
+		}
+	}
+}
+
+.box1-pad{
+	width: 100%;
+	max-width: 360px;
+	margin-bottom: 32px;
+
+	&:last-child{
+		margin-bottom: 0px;
+	}
+
+	a{
+		width: 100%;
+		display: inline-block;
+		color: #fff;
+		text-align: center;
+		background: $corPrim01;
+		border-radius: 10px;
+		padding: 56px 0px;
+		transition: all 250ms ease;
+
+		&:hover{
+			background: #738924;
+		}
+	}
+
+	h3{
+		font-size: 25px;
+	    font-family: 'Open Sans Bold';
+	    color: $corPrim02;
+	    margin-bottom: 16px;
+	}
+
+	span{
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+		font-size: 16.5px;
+	}
+
+	@media(min-width: 992px){
+		margin-bottom: 0px;
+		max-width: 300px;
+	}
+	@media(min-width: 1200px){
+		margin-bottom: 0px;
+		max-width: 360px;
+	}
+}
+
+
+
+
+/******* Google Maps - Pad *******/
+.g-maps-pad{
+	position: relative;
+	top: 10px;
+	z-index: 1;
+	img{
+		width: 100%;
+	}
+
+	@media(max-width: 992px){
+		display: none;
+	}
+}
