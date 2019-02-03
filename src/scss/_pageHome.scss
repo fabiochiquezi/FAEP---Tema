@@ -1,29 +1,18 @@
 .page-home{
 	.principais-cursos-pad{
-		margin: 64px 0px 85px;
-
-		@media(min-width: 992px){
-			margin: 128px 0px 138px;
-		}
-	}
-
-	.trabalhos-alunos-pad{
-		background: url('../img/bg-pad1.jpg') repeat;
-		width: 100%;
-		padding-top: 115px;
-		padding-bottom: 108px;
+		padding: 64px 0px 85px;
+		background: #f7f7f7;
 
 		.title-pad{
-			color: #fff;
+			margin-bottom: 28px;
+		}
 
-			h1{
-				color: #fff;
-			}
+		@media(min-width: 992px){
+			padding: 90px 0px 90px;
 		}
 	}
 
 	.saiba-mais-pad{
-		margin-top: 90px;
-		margin-bottom: 100px;
+		background: url('img/back-proximos-eventos.jpg') repeat;
 	}
 }

@@ -3,34 +3,63 @@ footer{
 	z-index: 10;
 	
 	.footer1{
-		background-color: #272a32;
+		background-color: #161616;
 		color: #fff;
-		padding: 75px 0px;
-		border-top: 9px solid #131823;
+		padding: 90px 0px;
+
+		@media(min-width: 992px){
+			padding: 90px 0px 0px;
+		}
 
 		.box-footer{
 			text-align: center;
 			margin-bottom: 48px;
 
+			&:last-child{
+				margin-bottom: 0px;
+			}
+
 			h5{
 				font-size: 15.5px;
 				text-transform: uppercase;
-			    font-family: 'Open Sans Bold';
-			    margin-bottom: 16px;
+				font-family: $bold;
+				margin-bottom: 16px;
+
+				@media(min-width: 992px){
+					padding-bottom: 10px;
+					margin-bottom: 20px;
+					border-bottom: 2px solid #fff;
+					display: inline-block;
+				}
 			}
 
 			p{
 				font-size: 14.5px;
 				line-height: 20px;
-				color: #787878;
+				color: #fff;
 			}
 
 			a{
-				color: #787878;
+				color: #fff;
+
+				&:hover{
+					opacity: 0.5;
+				}
 			}
 
 			i{
 				margin-right: 4px;
+			}
+
+			.content{
+				margin-bottom: 48px;
+			}
+		}
+
+		.box-footer-1{
+			.content{
+				max-width: 262px;
+				text-align: left;
 			}
 		}
 
@@ -41,26 +70,98 @@ footer{
 			}
 		}
 
+		.box-footer-3{
+			.content{
+				max-width: 190px;
+				margin: 0 auto;
+				margin-bottom: 48px;
+			}
+			li{
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
+
+				i{
+					margin-right: 10px;
+				}
+				span{
+					text-align: left;
+					font-size: 12px;
+				}
+			}
+			li:nth-child(2){
+				span{
+					margin-bottom: 4px;
+				}
+			}
+		}
+
+		.newsletter{
+			form{
+				position: relative;
+				
+				.enviar{
+					position: absolute;
+					visibility: hidden;
+					left: 0px;
+				}
+				.e-mail{
+					position: relative;
+					z-index: 10;
+					width: 280px;
+					height: 30px;
+					border: 2px solid #fff;
+					border-radius: 10px;
+					background: #161616;
+					color: #fff;
+					padding: 10px;
+				}
+			}
+		}
+
 		@media(min-width: 992px){
 			.box-footer{
-				text-align: left;
 				margin-bottom: 0px;
-
-				h5{
-					margin-bottom: 38px;
-				}
+				text-align: left;
 			}
 
 			.box-footer-2{
-				ul:last-child{
-					margin-left: 35px;
+				.content{
+					max-width: 250px;
+					margin-bottom: 0px;
+
+					li{
+						width: 48%;
+						margin: 0px 1%;
+						margin-bottom: 42px;
+					}
+				}
+			}
+
+			.box-footer-4{
+				max-width: 130px;
+
+				li{
+					margin-bottom: 41px;
+
+					&:last-child{
+						margin-bottom: 0px;
+					}
+				}
+			}
+
+			.box-footer-3{
+				.content2{
+					.social-media1{
+						max-width: 95px;
+					}
 				}
 			}
 		}
 	}
 
 	.footer2{
-		background-color: #131823;
+		background-color: #000;
 		padding: 24px 0px;
 		color: #fff;
     	font-family: 'Open Sans Light';

@@ -1,78 +1,23 @@
 .page-single-curso{
+	.cabecalho-curso{
+		background: url('img/curso-header-interno.jpg');
+		padding: 38px 0px;
 
-	h5{
-		font-size: 18px;
-    	font-family: 'Open Sans Bold';
-    	color: $corPrim02;
-    	margin-bottom: 16px;
-	}
-
-	.banner-curso{
-		margin-bottom: 32px;
-	}
-
-	.resumo-curso{
-		margin-bottom: 32px;
-
-		p{
-			color: #898989;
-			font-size: 16px;
-			line-height: 20px;
+		h2{
+			text-transform: uppercase;
+			margin-bottom: 16px;
+			font-size: 30px;
+			font-family: $bold;
 		}
-	}
+		li{
+			text-transform: uppercase;
+			font-size: 12px;
+			font-family: $bold;
+			margin-left: 6px;
 
-	.colapse-formacao{
-		.colapse-select-func{
-			margin-bottom: 32px;
-		}
-
-		.colapse-content-func{
-			a.btn-comprar{
-				display: none;
-			}
-		}
-
-		.colapse-boxes{
-			.box{
-				display: none;
-
-				&:first-child{
-					display: block;
-				}
+			&:first-child{
+				margin-left: 0px;
 			}
 		}
 	}
 }
-
-.select-colapse-mob{
-	width: 280px;
-	padding: 10px;
-	margin: 0 auto;
-}
-
-.banner-curso{
-	position: relative;
-
-	img{
-		width: 100%;
-		visibility: hidden;
-	}
-
-	.content{
-			position: absolute;
-			top: 0px;
-			left: 0;	
-			z-index: 10;
-	}
-	h1{
-			font-family: 'Open Sans Bold';
-			font-size: 18px;
-			line-height: 22px;
-			margin-bottom: 16px;		
-	}
-	p{
-		font-size: 16px;
-		line-height: 20px;
-	}
-}
-

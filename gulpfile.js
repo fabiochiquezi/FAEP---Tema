@@ -31,7 +31,7 @@ gulp.task('scss', function () {
         browsers: ['last 5 versions'],
         cascade: false
     }))
-    .pipe(gulp.dest('./build/css/'))
+    .pipe(gulp.dest('./wp/wp-content/themes/faep'))
 });
 
 // Gulp

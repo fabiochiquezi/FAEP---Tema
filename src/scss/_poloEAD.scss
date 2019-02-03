@@ -1,0 +1,25 @@
+.page-polo-ead{
+  padding-bottom: 90px;
+
+  .form-contact{
+
+    @media(min-width: 992px){
+      input, select{
+        width: 47% !important;
+        margin: 0px 1.5%;
+        margin-bottom: 15px;
+        max-width: 100%;
+        background: #f1eff0;
+        border: 1px solid #dbd9da;
+        border-radius: 0px;
+      }
+  
+      textarea{
+        width: 98% !important;
+        margin: 0px 1%;
+        margin-bottom: 15px;
+        max-width: 100%;
+      }
+    }
+  }
+} 

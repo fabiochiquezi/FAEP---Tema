@@ -1,166 +1,21 @@
-.lista-cursos-pad{
-
-	header.filtro-pesquisa-pad{
-		@media(min-width: 992px){
-			background-color: #fff;
-			border: 1px solid #d8d8d8;
-			padding: 8px 8px;
-			margin-bottom: 26px;
-			height: 58px;
-		}
-		@media(min-width: 1200px){
-			padding: 8px 42px;
-		}
-	}
-	.search{
-		position: relative;
-		width: 100%;
-		max-width: 320px;
-		margin: 0 auto;
-
-		input{
-			width: 100%;
-			border-radius: 25px;
-			border: 1px solid #d8d8d8;
-			height: 35px;
-			padding-left: 22px;
-			font-size: 16px;
-		}
-		.submit{
-			position: absolute;
-			top: 0;
-			right: 0;
-
-			a{
-				position: absolute;
-				top: 11px;
-				right: 16px;
-			}
-		}
-		.env-form{
-			visibility: hidden;
-		}
-
-		@media(min-width: 992px){
-			margin: 0px !important;
-		}
-	}
-
-	.filtro-pad{
-		width: 100%;
-		max-width: 320px;
-		margin: 0 auto;
-
-		select.colapse-select-js{
-			width: 100%;
-			border-radius: 25px;
-			border: 1px solid #d8d8d8;
-			height: 35px;
-			padding-left: 22px;
-		}
-
-		@media(min-width: 992px){
-			margin: 0px !important;
-			max-width: none;
-		}
-
-		ul.colapse-select-js{
-			li{
-				margin-left: 20px;
-
-				a{
-					font-size: 14px;
-					color: #8a8a8a;
-					background-color: #f5f5f5;
-					padding: 12px 16px;
-					display: inline-block;
-					border-radius: 25px;
-    				font-family: 'Open Sans Light';
-    				i{
-    					margin-left: 12px;
-    					position: relative;
-    					top: 2px;
-    				}
-
-    				&:hover{
-    					color: $corPrim01;
-
-    					i{
-    						opacity: 0.7;
-    					}
-    				}
-				}
-			}
-		}
-	}
-
-	.box{
-		position: relative;
-		margin-bottom: 32px;
-		border-radius: 12px;
-		overflow: hidden;
-
-		@media(min-width: 992px){
-			margin-left: 27px;
-			margin-right: 27px;
-
-			&:first-child{
-				//margin-left: 0px;
-			}
-		}
-
-		@media(min-width: 1200px){
-			margin-left: 9.5px;
-			margin-right: 9.5px;
-		}
-
-		a:hover{
-			opacity: 0.7;
-		}
-
-		@media(max-width: 768px){
-			&:last-child{
-				margin-bottom: 0px;
-			}
-		}
-
-		.content{
-			position: absolute;
-			bottom: 0px;
-			left: 0;
-			width: 100%;
-			background-color: rgba(82,64,70,0.7);
-			padding: 14px 22px;
-			border-bottom-left-radius: 12px;
-			border-bottom-right-radius: 12px;
-			font-size: 20px;
-			color: #fff;
-			line-height: 24px;
-			border-top: 2px solid $corPrim01;
-		}
-	}
-}
-
 .page-lista-curso{
-	background-color: #f5f5f5;
-
-	.search{
-		margin-bottom: 32px;
+	.content-colapse{
+		position: static;
+		height: auto;
 	}
-	.filtro-pad{
-		margin-bottom: 32px;
+	ul.item{
+		position: static;
 	}
+	.p-thumb-curso{
+		margin: 0px !important;
+		margin-left: 32px !important;
+		margin-bottom: 32px !important;
 
-	.cursos-pad{
-		position: relative;
-
-		.load{
-			position: absolute;
-			top: 32px;
-			left: 50%;
-			margin-left: -45px;
-			z-index: 10;
-			opacity: 0;
+		&:first-child{
+			margin-left: 0px !important;
 		}
+	}
+	.p-thumb-curso:nth-child(3n + 4){
+		margin-left: 0px !important;
 	}
 }
