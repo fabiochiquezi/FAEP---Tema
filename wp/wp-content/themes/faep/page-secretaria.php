@@ -9,9 +9,9 @@
     <div class="row">
       <h2>GRaduação</h2>
       <ul class="d-flex">
-        <li><a href="">home</a></li>
+        <li><a href="http://localhost/faep/wp/">home</a></li>
         <li>></li>
-        <li><a href="">cursos</a></li>
+        <li><a href="<?php the_permalink(); ?>">Secretaria</a></li>
       </ul>
     </div>
   </div>
@@ -41,8 +41,8 @@
               </div>
               <div class="content">
                 <h4>Telefone</h4>
-                <p>(11) 2107-5484</p>
-                <p class="d-flex align-items-center"><i class="icon icon-whats2"></i> (11) 95031-7539</p>
+                <p><?php the_field('telefone'); ?></p>
+                <p class="d-flex align-items-center"><i class="icon icon-whats2"></i> <?php the_field('whatsapp'); ?></p>
               </div>
             </li>
             <li class="d-flex align-items-center">
@@ -70,7 +70,7 @@
               </div>
               <div class="content">
                 <h4>Endereço</h4>
-                <a href="" target="_blank">
+                <a href="<?php the_field('g_maps'); ?>" target="_blank">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/maps-secretaria.jpg" alt="">
                 </a>
               </div>
@@ -79,7 +79,7 @@
 
           <div class="secretaria-part col-lg-4">
             <div class="content d-flex flex-column align-items-center">
-              <a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+              <a href="<?php the_field('regimento_interno'); ?>" target="_blank" class="item d-flex">
                 <div class="wrap">
                   <i class="icon icon-reg-interno2"></i>
                 </div>
@@ -89,7 +89,7 @@
                   <span href="" target="_blank" class="button2">BAIXAR</span>
                 </div>
               </a>
-              <a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+              <a href=<?php the_field('edital_do_vestibular'); ?>" target="_blank" class="item d-flex">
                 <div class="wrap">
                   <i class="icon icon-edit-vest2"></i>
                 </div>
@@ -99,7 +99,7 @@
                   <span href="" target="_blank" class="button2">BAIXAR</span>
                 </div>
               </a>
-              <a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+              <a href="<?php the_field('manual_da_biblioteca'); ?>" target="_blank" class="item d-flex">
                 <div class="wrap">
                   <i class="icon icon-man-bibli2"></i>
                 </div>
@@ -109,7 +109,7 @@
                   <span href="" target="_blank" class="button2">BAIXAR</span>
                 </div>
               </a>
-              <a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+              <a href="<?php the_field('manual_do_laboratorio'); ?>" target="_blank" class="item d-flex">
                 <div class="wrap">
                   <i class="icon icon-man-lab2"></i>
                 </div>
@@ -119,22 +119,22 @@
                   <span href="" target="_blank" class="button2">BAIXAR</span>
                 </div>
               </a>
-              <a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+              <a href="<?php the_field('guia_estudante'); ?>" target="_blank" class="item d-flex">
                 <div class="wrap">
                   <i class="icon icon-guia-estudante"></i>
                 </div>
                 <div class="dados">
-                  <h5>MANUAL DO LABORATÓRIO DE INFORMÁTICA E CPA</h5>
+                  <h5>GUIA DO ESTUDANTE</h5>
                   <p>Lorem ipsum dolor sit amet</p>
                   <span href="" target="_blank" class="button2">BAIXAR</span>
                 </div>
               </a>
-              <a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+              <a href="<?php the_field('portal_empregabilidade'); ?>" target="_blank" class="item d-flex">
                 <div class="wrap">
                   <i class="icon icon-portal-empregabilidade"></i>
                 </div>
                 <div class="dados">
-                  <h5>MANUAL DA BIBLIOTECA</h5>
+                  <h5>PORTAL DE EMPREGABILIDADE</h5>
                   <p>Lorem ipsum dolor sit amet</p>
                   <span href="" target="_blank" class="button2">BAIXAR</span>
                 </div>
@@ -159,7 +159,7 @@
           <input type="text" name="telefone" class="valid" placeholder="Telefone">	
           <input type="email" name="email" class="valid" placeholder="Email">	
           <input type="text" name="assunto" class="valid" placeholder="Assunto">	
-          <select name="curso" id="">
+          <select name="curso" id="" class="valid">
             <option value="curso01">Curso 01</option>
             <option value="curso02">Curso 02</option>
             <option value="curso03">Curso 03</option>
@@ -167,7 +167,9 @@
           <input type="text" name="data" class="valid" placeholder="Data de Interesse">	
           <textarea name="mensagem" placeholder="Mensagem"></textarea>
           <a href="" title="" class="btn-enviar">ENVIAR</a>
-          <img src="img/loader1.gif" alt="" class="load loader1">
+          <div class="wrap-load">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/loader1.gif" alt="" class="load loader1">
+          </div>
           <input type="submit" name="enviar" value="enviar" class="enviar-hidden">
 
           <div class="erro-form">

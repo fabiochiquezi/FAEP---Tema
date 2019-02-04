@@ -1,180 +1,180 @@
-.page-contato{
+// .page-contato{
 
-	@media(min-width: 992px){
-		.title-pad{
-			margin-bottom: 38px;
-			margin-top: 44px;
-		}
-	}
+// 	@media(min-width: 992px){
+// 		.title-pad{
+// 			margin-bottom: 38px;
+// 			margin-top: 44px;
+// 		}
+// 	}
 
-	.left{
-		margin-bottom: 64px;
+// 	.left{
+// 		margin-bottom: 64px;
 
-		h3{
-			color: $corPrim01;
-			font-size: 25px;
-		    font-family: 'Open Sans Bold';
-		    text-align: center;
-		    line-height: 29px;
-		    margin-bottom: 16px;
-		}
-	}
+// 		h3{
+// 			color: $corPrim01;
+// 			font-size: 25px;
+// 		    font-family: 'Open Sans Bold';
+// 		    text-align: center;
+// 		    line-height: 29px;
+// 		    margin-bottom: 16px;
+// 		}
+// 	}
 
-	.box{
-		margin: 0 auto;
-		margin-bottom: 32px;
-		width: 290px;
-		@media(min-width: 440px){
-			width: 380px;
-		}
+// 	.box{
+// 		margin: 0 auto;
+// 		margin-bottom: 32px;
+// 		width: 290px;
+// 		@media(min-width: 440px){
+// 			width: 380px;
+// 		}
 
-		p{
-			font-size: 20px;
- 		    font-family: 'Open Sans Light';		
- 		    line-height: 26px;
- 		    max-width: 100%;
- 		    word-wrap: break-word;
- 		    text-align: center;
-		}
+// 		p{
+// 			font-size: 20px;
+//  		    font-family: 'Open Sans Light';		
+//  		    line-height: 26px;
+//  		    max-width: 100%;
+//  		    word-wrap: break-word;
+//  		    text-align: center;
+// 		}
 
-		&:last-child{
-			margin-bottom: 0px;
-		}
-	}
+// 		&:last-child{
+// 			margin-bottom: 0px;
+// 		}
+// 	}
 
-	.right{
-		background: url('../img/bg-contato.jpg') no-repeat center center;
-		padding: 70px 0px 32px;
-		position: relative;
+// 	.right{
+// 		background: url('../img/bg-contato.jpg') no-repeat center center;
+// 		padding: 70px 0px 32px;
+// 		position: relative;
 
-		h3{
-			color: $corPrim02;
-			font-size: 25px;
-   			font-family: 'Open Sans Bold';
-		    text-align: center;
-		    line-height: 29px;
-		    margin-bottom: 32px;
-		    outline: none;
-		}
+// 		h3{
+// 			color: $corPrim02;
+// 			font-size: 25px;
+//    			font-family: 'Open Sans Bold';
+// 		    text-align: center;
+// 		    line-height: 29px;
+// 		    margin-bottom: 32px;
+// 		    outline: none;
+// 		}
 
-		input, a, textarea{
-			height: 44px;
-			border: 2px solid #eeeeee;
-			border-radius: 5px;
-			margin-bottom: 14px;
-			width: 100%;
-			max-width: 280px;
-			padding: 0px 16px;
-			font-size: 16px;
-		}
+// 		input, a, textarea{
+// 			height: 44px;
+// 			border: 2px solid #eeeeee;
+// 			border-radius: 5px;
+// 			margin-bottom: 14px;
+// 			width: 100%;
+// 			max-width: 280px;
+// 			padding: 0px 16px;
+// 			font-size: 16px;
+// 		}
 
-		textarea{
-    		font-family: 'Open Sans';
-			height: 170px;
-			font-size: 16px;
-			padding-top: 8px;
-		}
+// 		textarea{
+//     		font-family: 'Open Sans';
+// 			height: 170px;
+// 			font-size: 16px;
+// 			padding-top: 8px;
+// 		}
 
-		a{
-			text-align: center;
-			background: $corPrim01;
-			color: $corPrim02;
-			border: none;
-			padding-top: 15px;
-    		font-family: 'Open Sans Bold';
-		}
+// 		a{
+// 			text-align: center;
+// 			background: $corPrim01;
+// 			color: $corPrim02;
+// 			border: none;
+// 			padding-top: 15px;
+//     		font-family: 'Open Sans Bold';
+// 		}
 
-		.enviar-hidden{
-			position: absolute;
-			left: 0px;
-			visibility: hidden;
-		}
+// 		.enviar-hidden{
+// 			position: absolute;
+// 			left: 0px;
+// 			visibility: hidden;
+// 		}
 
-		img{
-			opacity: 0;
-		}
+// 		img{
+// 			opacity: 0;
+// 		}
 
-		.erro-form{
-			p{
-				text-align: center;
-			}
-		}
-	}
+// 		.erro-form{
+// 			p{
+// 				text-align: center;
+// 			}
+// 		}
+// 	}
 
-	@media(min-width: 992px){
-		.left{
-			width: 876px;
-			position: relative;
+// 	@media(min-width: 992px){
+// 		.left{
+// 			width: 876px;
+// 			position: relative;
 
-			.ajuste{
-				position: absolute;
-				right: 48px;
-				top: 50%;
-				margin-top: -204px;
-			}
-		}
+// 			.ajuste{
+// 				position: absolute;
+// 				right: 48px;
+// 				top: 50%;
+// 				margin-top: -204px;
+// 			}
+// 		}
 
-		.box{
-			margin-bottom: 80px;
-			position: relative;
-			top: -48px;
+// 		.box{
+// 			margin-bottom: 80px;
+// 			position: relative;
+// 			top: -48px;
 
-			h3{
-				text-align: left;
-			}
-			p{
-				text-align: left;
-			}
-		}
-		.right{
-			width: 1049px;
-			padding: 70px 0px 130px;
-			height: 740px;
+// 			h3{
+// 				text-align: left;
+// 			}
+// 			p{
+// 				text-align: left;
+// 			}
+// 		}
+// 		.right{
+// 			width: 1049px;
+// 			padding: 70px 0px 130px;
+// 			height: 740px;
 
-			form{
-				width: 360px;
-				background: #f5f5f5;
-				margin-left: 160px;
-				border-radius: 5px;
+// 			form{
+// 				width: 360px;
+// 				background: #f5f5f5;
+// 				margin-left: 160px;
+// 				border-radius: 5px;
 
-				header{
-					background: #a8c833;
-					width: 100%;
-					height: 78px;
-					border-top-left-radius: 5px;
-					border-top-right-radius: 5px;
-					margin-bottom: 16px;
-					border-left: 1px solid #fff;
-					border-top: 1px solid #fff;
-					border-right: 1px solid #fff;
-				}
+// 				header{
+// 					background: #a8c833;
+// 					width: 100%;
+// 					height: 78px;
+// 					border-top-left-radius: 5px;
+// 					border-top-right-radius: 5px;
+// 					margin-bottom: 16px;
+// 					border-left: 1px solid #fff;
+// 					border-top: 1px solid #fff;
+// 					border-right: 1px solid #fff;
+// 				}
 
-				h3{
-					text-align: left;
-					padding-top: 26px;
-					padding-left: 24px;
-				}
+// 				h3{
+// 					text-align: left;
+// 					padding-top: 26px;
+// 					padding-left: 24px;
+// 				}
 
-				img{
-					position: relative;
-					top: -7px;
-				}
+// 				img{
+// 					position: relative;
+// 					top: -7px;
+// 				}
 
-				textarea{
-					height: 120px;
-				}
+// 				textarea{
+// 					height: 120px;
+// 				}
 
-				textarea, input{
-					max-width: 324px;
-				}
+// 				textarea, input{
+// 					max-width: 324px;
+// 				}
 
-				.erro-form{
-					p{
-						position: relative;
-						top: -16px;
-					}
-				}
-			}
-		}
-	}
-}
+// 				.erro-form{
+// 					p{
+// 						position: relative;
+// 						top: -16px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

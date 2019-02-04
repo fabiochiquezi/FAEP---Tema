@@ -7,11 +7,11 @@
 <div class="cabecalho-curso">
 		<div class="container">
 			<div class="row">
-				<h2>GRaduação</h2>
+				<h2>Vestibular</h2>
 				<ul class="d-flex">
-					<li><a href="">home</a></li>
+					<li><a href="http://localhost/faep/wp/">home</a></li>
 					<li>></li>
-					<li><a href="">cursos</a></li>
+					<li><a href="<?php the_permalink(); ?>">Vestibular</a></li>
 				</ul>
 			</div>
 		</div>
@@ -95,7 +95,9 @@
             <input type="text" name="data" class="valid" placeholder="Data de Interesse">	
             <input type="text" name="endereco-completo" class="valid enderec-complet" placeholder="Data de Interesse">	
             <a href="" title="" class="btn-enviar">ENVIAR</a>
-            <img src="img/loader1.gif" alt="" class="load loader1">
+            <div class="wrap-load">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/loader1.gif" alt="" class="load loader1">
+            </div>
             <input type="submit" name="enviar" value="enviar" class="enviar-hidden">
 
             <div class="erro-form">

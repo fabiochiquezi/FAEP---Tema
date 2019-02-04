@@ -7,17 +7,17 @@
 <div class="cabecalho-curso">
   <div class="container">
     <div class="row">
-      <h2>GRaduação</h2>
+      <h2>Sobre Nós</h2>
       <ul class="d-flex">
-        <li><a href="">home</a></li>
+        <li><a href="http://localhost/faep/wp/">home</a></li>
         <li>></li>
-        <li><a href="">cursos</a></li>
+        <li><a href="<?php the_permalink(); ?>">Sobre Nós</a></li>
       </ul>
     </div>
   </div>
 </div>
 
-<div class="page-secretaria">
+<div class="page-sobre-nos">
   <div class="container">
     <div class="row d-flex flex-column align-items-center">
 

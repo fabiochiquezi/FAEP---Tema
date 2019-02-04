@@ -48,7 +48,7 @@
 						<li><i class="icon icon-acert"></i>Lorem Ipsum Dolor Sit Amet</li>
 						<li><i class="icon icon-acert"></i>Lorem Ipsum Dolor Sit Amet</li>
 					</ul>
-					<a href="" class="button1">VER MAIS</a>
+					<a href="http://localhost/faep/wp/graduacao/" class="button1">VER MAIS</a>
 				</div>
 				<div class="item item-pos-graduacao">
 					<h4>Pós graduação</h4>
@@ -61,7 +61,7 @@
 						<li><i class="icon icon-acert"></i>Lorem Ipsum Dolor Sit Amet</li>
 						<li><i class="icon icon-acert"></i>Lorem Ipsum Dolor Sit Amet</li>
 					</ul>
-					<a href="" class="button1">VER MAIS</a>
+					<a href="http://localhost/faep/wp/pos-graduacao/" class="button1">VER MAIS</a>
 				</div>
 				<div class="item item-mba">
 					<h4>MBA</h4>
@@ -74,7 +74,7 @@
 						<li><i class="icon icon-acert"></i>Lorem Ipsum Dolor Sit Amet</li>
 						<li><i class="icon icon-acert"></i>Lorem Ipsum Dolor Sit Amet</li>
 					</ul>
-					<a href="" class="button1">VER MAIS</a>
+					<a href="http://localhost/faep/wp/mba/" class="button1">VER MAIS</a>
 				</div>
 		</div>
 
@@ -244,7 +244,7 @@
 						</div>
 					</div>
 
-					<a href="" class="button2 ver-mais">VER MAIS</a>
+					<a href="http://localhost/faep/wp/eventos/" class="button2 ver-mais">VER MAIS</a>
 					
 					<ul class="eventos-thumb content-colapse d-flex flex-column align-items-center flex-lg-row justify-content-between flex-wrap">
 						<?php
@@ -292,9 +292,13 @@
 					<div class="title-pad">
 						<h2>Secretaria</h2>
 					</div>	
+
+					<?php 
+								$pageSecretaria = get_page_by_title('Secretaria');
+							?>
 					
 					<div class="content d-flex flex-column align-items-center flex-lg-row flex-lg-wrap">
-						<a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+						<a href="<?php the_field('regimento_interno', $pageSecretaria); ?>" target="_blank" class="item d-flex">
 							<div class="wrap">
 								<i class="icon icon-reg-interno"></i>
 							</div>
@@ -303,7 +307,7 @@
 								<p>Lorem ipsum dolor sit amet</p>
 							</div>
 						</a>
-						<a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+						<a href="<?php the_field('edital_do_vestibular', $pageSecretaria); ?>" target="_blank" class="item d-flex">
 							<div class="wrap">
 								<i class="icon icon-edit-vest"></i>
 							</div>
@@ -312,7 +316,7 @@
 								<p>Lorem ipsum dolor sit amet</p>
 							</div>
 						</a>
-						<a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+						<a href="<?php the_field('manual_da_biblioteca', $pageSecretaria); ?>" target="_blank" class="item d-flex">
 							<div class="wrap">
 								<i class="icon icon-man-bibli"></i>
 							</div>
@@ -321,7 +325,7 @@
 								<p>Lorem ipsum dolor sit amet</p>
 							</div>
 						</a>
-						<a href="http://localhost/faep/wp/wp-content/uploads/2018/10/jp000001.pdf" target="_blank" class="item d-flex">
+						<a href="<?php the_field('manual_do_laboratorio', $pageSecretaria); ?>" target="_blank" class="item d-flex">
 							<div class="wrap">
 								<i class="icon icon-man-lab"></i>
 							</div>

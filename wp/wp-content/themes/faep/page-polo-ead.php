@@ -7,11 +7,11 @@
 <div class="cabecalho-curso">
   <div class="container">
     <div class="row">
-      <h2>GRaduação</h2>
+      <h2>Contato</h2>
       <ul class="d-flex">
         <li><a href="">home</a></li>
         <li>></li>
-        <li><a href="">cursos</a></li>
+        <li><a href="">Contato</a></li>
       </ul>
     </div>
   </div>
@@ -36,7 +36,10 @@
           <input type="text" name="assunto" class="valid" placeholder="Assunto">	
           <textarea name="mensagem" placeholder="Mensagem"></textarea>
           <a href="" title="" class="btn-enviar">ENVIAR</a>
-          <img src="img/loader1.gif" alt="" class="load loader1">
+          <div class="wrap-load">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/loader1.gif" alt="" class="load loader1">
+          </div>
+          
           <input type="submit" name="enviar" value="enviar" class="enviar-hidden">
 
           <div class="erro-form">

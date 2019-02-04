@@ -7,22 +7,22 @@
 	<div class="cabecalho-curso">
 		<div class="container">
 			<div class="row">
-				<h2>GRaduação</h2>
+				<h2><?php the_title(); ?></h2>
 				<ul class="d-flex">
-					<li><a href="">home</a></li>
+					<li><a href="http://localhost/faep/wp/">home</a></li>
 					<li>></li>
-					<li><a href="">cursos</a></li>
+					<li><a href="<?php the_permalink(); ?>">cursos</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 
-	<div class="page-lista-curso page-interna principais-cursos-pad">
+	<div class="page-lista-curso principais-cursos-pad">
 		<div class="container">
 			<div class="row">
 				<div class="title-pad">
-					<h1>Próximos<span> Eventos</span></h1>
-					<p>Lorem ipsum dolor sit amet</p>
+					<h1><?php the_title(); ?><span></span></h1>
+					<p>Confira nossa lista de cursos.</p>
 					<div class="item-design">
 						<i class="icon icon-chapeu2"></i>
 					</div>
@@ -69,7 +69,7 @@
 
 					</ul>						
 				</div>
-<?php endwhile; else: endif; ?>
+				<?php endwhile; else: endif; ?>
 			</div>
 		</div>
 	</div>

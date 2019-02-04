@@ -15,4 +15,21 @@
 	.saiba-mais-pad{
 		background: url('img/back-proximos-eventos.jpg') repeat;
 	}
+	
+	.secretaria-part{
+		@media(min-width: 992px){
+			padding: 80px 0px 50px;
+			
+			.content{
+				max-width: 900px;
+			}
+			.item{
+				margin-top: 16px;
+			}
+			a{
+				padding: 0px 30px;
+			}
+		}
+
+	}
 }

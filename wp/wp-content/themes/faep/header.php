@@ -19,10 +19,12 @@
 				<div class="row justify-content-between">
 
 					<ul class="left inf-base d-flex">
-
-						<li class="d-flex align-items-center"><i class="icon icon-cell"></i>011 2771-5080 / 011 4750-2355 /</li>
-						<li class="d-flex align-items-center"><a href="https://api.whatsapp.com/send?phone=5519983127035" title="" class="d-flex align-items-center" target="_blank"><i class="icon icon-whats"></i> 011 95031-7539 </a></li>
-						<li class="d-flex align-items-center"><a href="https://api.whatsapp.com/send?phone=5511972773103" title="" class="d-flex align-items-center" target="_blank"><i class="icon icon-mail"></i>comercial@faculdadespaulistanas.edu.br</a></li>
+						<?php 
+							$pageSecretaria = get_page_by_title('Secretaria');
+						?>
+						<li class="d-flex align-items-center"><i class="icon icon-cell"></i><?php the_field('telefone', $pageSecretaria); ?></li>
+						<li class="d-flex align-items-center"><a href="https://api.whatsapp.com/send?phone=<?php the_field('whatsapp_link', $pageSecretaria); ?>" title="" class="d-flex align-items-center" target="_blank"><i class="icon icon-whats"></i> <?php the_field('whatsapp', $pageSecretaria); ?> </a></li>
+						<li class="d-flex align-items-center"><i class="icon icon-mail"></i><?php the_field('email', $pageSecretaria); ?></li>
 
 					</ul>
 
@@ -43,11 +45,11 @@
 						</div>
 						<ul class="social-media1 d-flex align-items-center">
 							<?php 
-								$page = get_page_by_title('contato');
+								$pageSecretaria = get_page_by_title('Secretaria');
 							?>
-							<li><a href="<?php the_field('facebook', $page); ?>" target="_blank" title=""><i class="icon icon-face"></i></a></li>
-							<li><a href="<?php the_field('youtube', $page); ?>" target="_blank" title=""><i class="icon icon-youtube"></i></a></li>
-							<li><a href="<?php the_field('instagram', $page); ?>" target="_blank" title=""><i class="icon icon-instagram"></i></a></li>
+							<li><a href="<?php the_field('facebook', $pageSecretaria); ?>" target="_blank" title=""><i class="icon icon-face"></i></a></li>
+							<li><a href="<?php the_field('youtube', $pageSecretaria); ?>" target="_blank" title=""><i class="icon icon-youtube"></i></a></li>
+							<li><a href="<?php the_field('instagram', $pageSecretaria); ?>" target="_blank" title=""><i class="icon icon-instagram"></i></a></li>
 						</ul>
 					</div>					
 				</div>
@@ -85,35 +87,31 @@
 						</div>
 
 						<ul class="d-flex flex-column align-items-center flex-lg-row menu-principal">
-							<li><a href="" title="">HOME</a></li>
+							<li><a href="http://localhost/faep/wp/" title="">HOME</a></li>
 							<li style="border-bottom: 0px;">
-								<a href="" title="">Graduação</a>
+								<a href="http://localhost/faep/wp/category/graduacao/" title="">Graduação</a>
 								<ul>
-									<li><a href="" title=""><span class="d-lg-none">Graduação - </span>	Presencial</a></li>
-									<li><a href="" title=""><span class="d-lg-none">Graduação - </span>	EAD</a></li>
+									<li><a href="http://localhost/faep/wp/category/graduacao-presencial/" title=""><span class="d-lg-none">Graduação - </span>	Presencial</a></li>
+									<li><a href="http://localhost/faep/wp/category/graduacao-ead/" title=""><span class="d-lg-none">Graduação - </span>	EAD</a></li>
 								</ul>
 							</li>
 							<li style="border-bottom: 0px;">
-								<a href="" title="">PÓs Graduação</a>
+								<a href="http://localhost/faep/wp/category/pos-graduacao/" title="">PÓs Graduação</a>
 								<ul>
-									<li><a href="" title=""><span class="d-lg-none">PÓs Graduação - </span>	Presencial</a></li>
-									<li><a href="" title=""><span class="d-lg-none">PÓs Graduação - </span>	EAD</a></li>
-									<li><a href="" title=""><span class="d-lg-none">PÓs Graduação - </span>	MBA</a></li>
+									<li><a href="http://localhost/faep/wp/category/pos-graduacao-presencial/" title=""><span class="d-lg-none">PÓs Graduação - </span>	Presencial</a></li>
+									<li><a href="http://localhost/faep/wp/category/pos-graduacao-ead/" title=""><span class="d-lg-none">PÓs Graduação - </span>	EAD</a></li>
+									<li><a href="http://localhost/faep/wp/category/pos-graduacao-mba/" title=""><span class="d-lg-none">PÓs Graduação - </span>	MBA</a></li>
 								</ul>							
 							</li>
 							<li style="border-bottom: 0px;">
-								<a href="" title="">vestibular</a>
-								<ul>
-									<li><a href="" title=""><span class="d-lg-none">Vestibular - </span>	Presencial</a></li>
-									<li><a href="" title=""><span class="d-lg-none">Vestibular - </span>	EAD</a></li>
-								</ul>
+								<a href="http://localhost/faep/wp/vestibular/" title="">vestibular</a>
 							</li>
 							<li>
-								<a  title="">secretaria</a>
+								<a href="http://localhost/faep/wp/secretaria/">secretaria</a>
 							</li>
-							<li class="ajuste-licenc"><a href="" title="">licenciatura para graduados</a></li>
-							<li><a href="" title="">técnico</a></li>
-							<li><a href="">SOBRE NÓS</a></li>
+							<li class="ajuste-licenc"><a href="http://localhost/faep/wp/category/licenciatura-para-graduados/" title="">licenciatura para graduados</a></li>
+							<li><a href="http://localhost/faep/wp/category/tecnico/" title="">técnico</a></li>
+							<li><a href="http://localhost/faep/wp/sobre-nos/">SOBRE NÓS</a></li>
 						</ul>
 
 						<div class="bottom-debug">

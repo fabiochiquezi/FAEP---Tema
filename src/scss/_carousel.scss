@@ -59,6 +59,13 @@
 		&:hover{
 			opacity: 0.5;
 		}
+
+		@media(max-width: 992px){
+			&::before{
+				font-weight: bold;
+				font-size: 26px;
+			}
+		}
 	}
 	.nav--next:active,
 	.nav--prev:active{

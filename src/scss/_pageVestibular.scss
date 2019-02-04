@@ -1,24 +1,34 @@
 .page-vestibular{
   padding-bottom: 90px;
+  padding-top: 90px;
+  background: #f7f7f7;
 
   .lista-contato{
     margin-bottom: 70px;
   }
 
   .form-contact{
-    input, select{
-      width: 47% !important;
-      margin: 0px 1.5%;
-      margin-bottom: 15px;
-      max-width: 100%;
-      background: #f1eff0;
-      border: 1px solid #dbd9da;
-      border-radius: 0px;
+    .wrap-load{
+      display: block;
+      margin-top: 8px;
+      width: 100%;
+      text-align: center;
     }
 
-    .enderec-complet{
-      width: 100% !important;
-      max-width: 100%;
+    @media(min-width: 992px){
+      input, select{
+        width: 47% !important;
+        margin: 0px 1.5%;
+        margin-bottom: 15px;
+        max-width: 100%;
+        background: #f1eff0;
+        border: 1px solid #dbd9da;
+        border-radius: 0px;
+      }
+      .enderec-complet{
+        width: 100% !important;
+        max-width: 100%;
+      }
     }
   }
 }

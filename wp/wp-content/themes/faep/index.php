@@ -1,12 +1,5 @@
 <?php
 
-/**
-
-
- * Template Name: Blog
-
- */
-
 
 ?>
 

@@ -6,18 +6,42 @@
 		<div class="cabecalho-curso">
 			<div class="container">
 				<div class="row">
-					<h2>GRaduação</h2>
+					<?php 
+						global $post;
+						$idPost = get_the_ID();
+						$postcat = get_the_category( $idPost );
+						
+						// print_r($postcat) ;  
+						
+						// if ( ! empty( $postcat ) ) {
+						// 		echo esc_html( $postcat[0]->name );   
+						// }
+						$link = get_category_link( $postcat[0]->term_id );
+					?>	
+					<h2><?php 
+								if ( ! empty( $postcat ) ) {
+									echo esc_html( $postcat[0]->name );   
+							}						
+						?></h2>
 					<ul class="d-flex">
-						<li><a href="">home</a></li>
+						<li><a href="http://localhost/faep/wp/">home</a></li>
 						<li>></li>
-						<li><a href="">cursos</a></li>
+				
+						<li><a href="<?php
+							echo $link;
+						?>"><?php 
+								if ( ! empty( $postcat ) ) {
+									echo esc_html( $postcat[0]->name );   
+							}						
+						?></a></li>
 						<li>></li>
-						<li><a href="">NOME DO CURSO</a></li>
+						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="title-pad">
+
 			<h1>Próximos<span> Eventos</span></h1>
 			<p>Lorem ipsum dolor sit amet</p>
 			<div class="item-design">
@@ -35,28 +59,27 @@
 					
 					<div class="objetivo item">
 						<h3>Objetivo</h3>
-						<p>Artes visuais é uma área que abrange qualquer forma de representação visual de cor e forma. As representações visuais dramáticas, como cinema, teatro e música, também se encaixam nessa área</p>
-						<p>Segundo a revista Guida da Carreira, os primeiros cursos foram criados na década de 70 e tinham como objetivo formar educadores de Artes Cênicas, Desenho, Artes Plásticas e Música.</p>
-						<p>No curso de graduação de Artes Visuais os estudantes apreendem a desenvolver a percepção, reflexão, produção e crítica. Muitas instituições exigem que o futuro aluno passe por uma prova de aptidão, ou prova de Habilidades Específicas.</p>
-						<p>O curso de Artes visuais possui duração de 4 anos nas Faculdades Paulistanas e grande parte da sua carga horária é composta por matérias práticas de desenho, pintura e imagens digitais, entre outras.</p>
+						<?php the_field('objetivo_curso'); ?>
 					</div>
 					<div class="publico-alvo item">
 						<h3>Público-Alvo</h3>
-						<p>Lorem ipsum mi rutrum tellus mollis duis turpis cubilia, tincidunt praesent varius viverra consectetur lobortis aliquet vitae, id ultrices phasellus dapibus nostra senectus quisque. nostra sed neque euismod commodo aptent primis integer, vitae pulvinar libero vestibulum suscipit nullam condimentum id, feugiat sodales tristique molestie praesent aliquet. libero euismod quam convallis aliquam sed arcu curae posuere, viverra duis curae nec ultrices varius sollicitudin </p>
+						<?php the_field('publico_curso'); ?>
 					</div>
-					<div class="matriz-curricular item d-none d-lg-flex flex-wrap justify-content-between">
-						<div class="lista">
-							<b>1ª Fase</b>
-							<ul>
-								<li>História da Arte Antiga e Medieval	</li>
-								<li>Introdução ao Desenho</li>
-								<li>Fundamentos da Linguagem Visual </li>
-								<li>Introdução ao Curso de Artes Visuais</li>
-								<li>Leitura e Produção de Textos </li>
-								<li>Filosofia da Educação </li>
-							</ul>
+					<div class="matriz-curricular item">
+						<h3>Matriz Curricular</h3>
+						<div class="item d-none d-lg-flex flex-wrap justify-content-between">
+							<?php if(have_rows('lista_curso')) : while(have_rows('lista_curso')) : the_row(); ?>
+							<div class="lista">
+								<b><?php the_sub_field('fase'); ?></b>
+								<ul>
+									<?php if(have_rows('lista_itens')) : while(have_rows('lista_itens')) : the_row(); ?>
+										<li><?php the_sub_field('item_matriz'); ?></li>
+									<?php endwhile; else: endif; ?>
+								</ul>
+							</div>
+							<?php endwhile; else: endif; ?>
 						</div>
-						<div class="lista">
+						<!-- <div class="lista">
 							<b>2ª Fase</b>
 							<ul>
 								<li>História da Arte na Modernidade </li>
@@ -115,54 +138,54 @@
 								<li>Desenho de Criação (Eletivo)</li>
 								<li>Desenho de Criação (Eletivo)</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 
 					<div class="diferenciais item">
 						<h3>Diferenciais</h3>
-						<p>Lorem ipsum mi rutrum tellus mollis duis turpis cubilia, tincidunt praesent varius viverra consectetur lobortis aliquet vitae, id ultrices phasellus dapibus nostra senectus quisque. nostra sed neque euismod commodo aptent primis integer, vitae pulvinar libero vestibulum suscipit nullam condimentum id, feugiat sodales tristique molestie praesent aliquet. libero euismod quam convallis aliquam sed arcu curae posuere, viverra duis curae nec ultrices varius sollicitudin </p>
+						<?php the_field('diferenciais_curso'); ?>
 					</div>
 					<div class="mercado-trabalho item">
 						<h3>Mercado de trabalho</h3>
-						<p>Com a atualização do currículo programático e a inclusão das mídias digitais, o mercado de trabalho para o formado no curso de Artes Visuais é promissor. Criatividade e produtividade são as principais características que as empresas esperam desse profissional.</p>
+						<?php the_field('mercado_curso'); ?>
 					</div>
 					<div class="area-atuacao item">
-						<p>O campo de trabalho é amplo e quem se forma em Artes Visuais pode trabalhar em áreas com</p>
-
-						<p><b>Indústria têxtil – </b>Criação de novas estampas e renovação da linha de produtos, entre outras atividades.</p>
-
-						<p><b>Eventos Culturais – </b>Seleção e classificação das obras de uma exposição ou evento cultural.</p>
-
-						<p><b>Restauração – </b>Nesta profissão o objetivo principal é devolver as características originais de objetos de arte antigos ou deteriorados.</p>
-
-						<p><b>Multimídia – </b>Elaboração de vinhetas, desenhos animados ou ilustrações para emissoras de TV, sites ou qualquer forma de exibição pública.</p>
-
-						<p><b>Docência – </b>Os formados em licenciatura podem ser professores no ensino básico (fundamental e médio) em escolas públicas ou privadas. Também é possível lecionar em cursos livres para todas as faixas etárias.</p>
+						<h3>Área de Atuação</h3>
+						<?php the_field('area_curso'); ?>
 					</div>
-					<a href="" class="pdf-download" download>Download PDF</a>
+					<?php if(get_field('arq_pdf')){ ?>
+						<a href="<?php the_field('arq_pdf'); ?>" class="pdf-download" download>Download PDF</a>
+					<?php } ?>
 				</main>
 
 				<aside class="aside-curso d-flex flex-column align-items-center w-100 col-lg-4 col-xl-3">
 					<ul class="inf-extra">
-						<li class="d-flex">
-							<i class="icon icon-curso-1"></i>
+						<li class="d-flex align-items-center">
+							<div class="wrap">
+								<i class="icon icon-relogio"></i>
+							</div>
+							
 							<div class="content">
 								<span>Duração:</span>
-								04 anos
+								<?php the_field('duracao_home'); ?>
 							</div>
 						</li>
-						<li class="d-flex">
-							<i class="icon icon-curso-1"></i>
+						<li class="d-flex align-items-center">
+						<div class="wrap">
+								<i class="icon icon-relogio"></i>
+							</div>
 							<div class="content">
 								<span>Carga horária:</span>
-								3880 horas
+								<?php the_field('carga_horaria_home'); ?>
 							</div>
 						</li>
-						<li class="d-flex">
-							<i class="icon icon-curso-2"></i>
+						<li class="d-flex align-items-center">
+							<div class="wrap">
+								<i class="icon icon-pag"></i>
+							</div>
 							<div class="content">
 								<span>Investimento:</span>
-								R$ 399,00 / mês
+								<?php the_field('investimento_curso'); ?>
 							</div>
 						</li>
 					</ul>
@@ -177,7 +200,7 @@
 							<input type="text" name="" placeholder="Telefone" class="valid">	
 							<a href="" class="btn btn-enviar" title="">ENVIAR</a>	
 							<input type="submit" name="enviar" value="enviar" class="env-form enviar-hidden">
-							<img src="img/loader1.gif" alt="" class="load">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/loader1.gif" alt="" class="load">
 							<div class="erro-form">
 								<p></p>
 							</div>

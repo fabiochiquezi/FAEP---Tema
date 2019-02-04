@@ -1,4 +1,8 @@
 .page-lista-curso{
+	padding-bottom: 58px;
+	padding-top: 90px;
+	background: #f7f7f7;
+
 	.content-colapse{
 		position: static;
 		height: auto;
@@ -7,12 +11,17 @@
 		position: static;
 	}
 	.p-thumb-curso{
-		margin: 0px !important;
-		margin-left: 32px !important;
+		margin: 0 auto;
 		margin-bottom: 32px !important;
 
-		&:first-child{
-			margin-left: 0px !important;
+		@media(min-width: 992px){
+			margin: 0px !important;
+			margin-left: 32px !important;
+			margin-bottom: 32px !important;
+		
+			&:first-child{
+				margin-left: 0px !important;
+			}
 		}
 	}
 	.p-thumb-curso:nth-child(3n + 4){

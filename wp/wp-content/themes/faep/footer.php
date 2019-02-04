@@ -15,7 +15,7 @@
 						<div class="content2 newsletter">
 							<h5>Inscreva-se em nossa Newsletter</h5>
 							<form action="">
-								<input type="text" name="email" class="e-mail" placeholder="Coloque seu e-mail">
+								<input type="email" name="email" class="e-mail" placeholder="Coloque seu e-mail">
 								<input type="submit" value="submit" class="enviar">
 							</form>
 						</div>
@@ -26,16 +26,16 @@
 
 						<div class="content">
 							<ul class="d-lg-flex flex-wrap align-items-center">
-								<li><a href="">Blog</a></li>
-								<li><a href="">Sobre Nós</a></li>
-								<li><a href="">Unidades</a></li>
-								<li><a href="">Grupo Educacional</a></li>
-								<li><a href="">Secretaria</a></li>
-								<li><a href="">Área do aluno</a></li>
-								<li><a href="">Eventos</a></li>
-								<li><a href="">FEP EAD</a></li>
-								<li><a href="">Vestibular</a></li>
-								<li><a href="">Fale Conosco</a></li>
+								<li><a href="http://localhost/faep/wp/blog/">Blog</a></li>
+								<li><a href="http://localhost/faep/wp/sobre-nos/">Sobre Nós</a></li>
+								<!-- <li><a href="">Unidades</a></li>
+								<li><a href="">Grupo Educacional</a></li> -->
+								<li><a href="http://localhost/faep/wp/secretaria/">Secretaria</a></li>
+								<!-- <li><a href="">Área do aluno</a></li> -->
+								<li><a href="http://localhost/faep/wp/eventos/">Eventos</a></li>
+								<!-- <li><a href="">FEP EAD</a></li> -->
+								<li><a href="http://localhost/faep/wp/vestibular/">Vestibular</a></li>
+								<li><a href="http://localhost/faep/wp/secretaria/">Fale Conosco</a></li>
 							</ul>
 						</div>
 					</div>
@@ -45,11 +45,11 @@
 
 						<div class="content d-lg-flex">
 							<ul>
-								<li><a href="">Graduação</a></li>
-								<li><a href="">Pós-Graduação</a></li>
-								<li><a href="">Licenciatura para Graduados</a></li>
-								<li><a href="">MBA</a></li>
-								<li><a href="">2º Licenciatura</a></li>
+								<li><a href="http://localhost/faep/wp/graduacao/">Graduação</a></li>
+								<li><a href="http://localhost/faep/wp/pos-graduacao/">Pós-Graduação</a></li>
+								<li><a href="http://localhost/faep/wp/licenciatura-para-graduados/">Licenciatura para Graduados</a></li>
+								<li><a href="http://localhost/faep/wp/mba/">MBA</a></li>
+								<!-- <li><a href="">2º Licenciatura</a></li> -->
 							</ul>
 						</div>
 					</div>
