@@ -25,7 +25,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/img/banner-secretaria.jpg" alt="">
     </div>
 
-      <div class="content1">
+      <div class="content1 w-100">
         <div class="title-pad">
           <h1><span>Contato</span></h1>
           <div class="item-design">

@@ -1,4 +1,99 @@
-	<footer>
+<div class="ligamos-voce d-none d-lg-block">
+	<header class="header">
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-between w-100">
+
+				<div class="d-flex align-items-center">
+					<div class="wrap">
+						<i class="icon icon-ligamos-voce"></i>
+					</div>
+					<p>Ligamos para <span>você!</span></p>
+				</div>
+
+				<span class="button4">
+					receber ligação
+				</span>
+
+				<i class="icon icon-receber-ligacao"></i>
+			</div>
+		</div>
+	</header>
+
+	<div class="content off-content">
+		<div class="container">
+			<div class="row">
+				<div class="form">
+
+					<form action="" class="d-flex flex-column align-items-center form-pad form-contact flex-lg-row flex-lg-wrap justify-content-center" accept-charset="utf-8">
+
+						<div class="inf">
+							<h4>preencha o formulário abaixo</h4>
+							<p>Não perca tempo e faça sua inscrição no Vestibular para o 1º semestre de 2018</p>
+						</div>
+
+						<div class="w-100 d-flex flex-wrap justify-content-between">
+							<input type="text" name="nome" class="valid col-lg-6 max-width" placeholder="Nome Completo">	
+							<input type="text" name="telefone" class="valid col-lg-6 max-width" placeholder="Telefone">	
+							<input type="email" name="email" class="valid col-lg-6 max-width" placeholder="Email">	
+							<input type="text" name="celular" class="valid col-lg-6 max-width" placeholder="Celular">	
+						</div>
+
+						<div class="d-flex align-items-end w-100">
+							<div class="col-lg-4" style="padding-left: 0px !important;">
+								<h4>O que deseja cursar</h4>
+								<input type="text" name="curso" class="valid" placeholder="Curso">	
+								<h4>data</h4>
+								<input type="text" name="data" class="valid" placeholder="Data de Interesse" style="margin-bottom: 0px !important;">	
+							</div>
+						
+							<div class="col-lg-8" style="padding-right: 0px !important;">
+								<h4>Como você tomou conhecimento do Vestibular nas Faculdades Paulistanas?</h4>
+								<div class="d-flex justify-content-between">
+									<div class="check d-flex align-items-center">
+										<input type="checkbox" name="vehicle1" value="Bike">
+										<span>Site</span>
+									</div>
+
+									<div class="check d-flex align-items-center">
+										<input type="checkbox" name="vehicle1" value="Bike">
+										<span>Jornal</span>
+									</div>
+
+									<div class="check d-flex align-items-center">
+										<input type="checkbox" name="vehicle1" value="Bike">
+										<span>Cartaz/Panflet</span>
+									</div>
+
+									<div class="check d-flex align-items-center">
+										<input type="checkbox" name="vehicle1" value="Bike">
+										<span>Facebook</span>
+									</div>
+
+									<div class="check d-flex align-items-center">
+										<input type="checkbox" name="vehicle1" value="Bike">
+										<span>Amigos/Familiares</span>
+									</div>
+								</div>
+
+								<a href="" title="" class="btn-enviar">ENVIAR FORMULÁRIO</a>
+								<div class="wrap-load">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/loader1.gif" alt="" class="load loader1">
+								</div>
+								<input type="submit" name="enviar" value="enviar" class="enviar-hidden">
+							</div>
+						</div>
+
+
+						<div class="erro-form">
+							<p></p>
+						</div>
+					</form>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
 		<div class="footer1">
 			<div class="container">
 				<div class="row d-flex flex-column align-items-center flex-lg-row justify-content-lg-between align-items-lg-start flex-lg-nowrap">

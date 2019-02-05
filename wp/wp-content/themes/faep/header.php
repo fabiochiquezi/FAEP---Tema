@@ -30,13 +30,13 @@
 
 					<div class="right d-flex align-items-center">
 						<div class="outros-links d-flex">
-							<a href="" class="button1">CPA</a>
+							<a href="http://localhost/faep/wp/cpa/" class="button1">CPA</a>
 							<ul class="d-flex">
 								<li>
-									<a href="" class="d-flex"><i class="icon icon-porta"></i> Área do Aluno</a>
+									<a href="http://saesp.portalgeo.srv.br/login.aspx" class="d-flex"><i class="icon icon-porta"></i> Área do Aluno</a>
 								</li>
 								<li>
-									<a href="">FAEP EAD</a>
+									<a href="http://ineq.portalava.com.br/login">FAEP EAD</a>
 								</li>
 								<li>
 									<a href="">Seja um polo EAD</a>

@@ -85,7 +85,6 @@
 						<div class="container-input">
 							<input type="text" name="s" class="valid" placeholder="Pesquisar">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/loader1.gif" alt="" class="load loader1">
-							<i class="icon icon-search"></i>
 						</div>
 						<a href="" title="" class="btn-enviar">PESQUISAR CURSO</a>
 						<input type="submit" name="enviar" value="enviar" class="enviar-hidden">
@@ -298,7 +297,7 @@
 							?>
 					
 					<div class="content d-flex flex-column align-items-center flex-lg-row flex-lg-wrap">
-						<a href="<?php the_field('regimento_interno', $pageSecretaria); ?>" target="_blank" class="item d-flex">
+						<a href="<?php the_field('regimento_interno', $pageSecretaria); ?>" target="_blank" class="item d-flex align-items-center">
 							<div class="wrap">
 								<i class="icon icon-reg-interno"></i>
 							</div>
@@ -307,7 +306,7 @@
 								<p>Lorem ipsum dolor sit amet</p>
 							</div>
 						</a>
-						<a href="<?php the_field('edital_do_vestibular', $pageSecretaria); ?>" target="_blank" class="item d-flex">
+						<a href="<?php the_field('edital_do_vestibular', $pageSecretaria); ?>" target="_blank" class="item d-flex align-items-center">
 							<div class="wrap">
 								<i class="icon icon-edit-vest"></i>
 							</div>
@@ -316,7 +315,7 @@
 								<p>Lorem ipsum dolor sit amet</p>
 							</div>
 						</a>
-						<a href="<?php the_field('manual_da_biblioteca', $pageSecretaria); ?>" target="_blank" class="item d-flex">
+						<a href="<?php the_field('manual_da_biblioteca', $pageSecretaria); ?>" target="_blank" class="item d-flex align-items-center">
 							<div class="wrap">
 								<i class="icon icon-man-bibli"></i>
 							</div>
@@ -325,7 +324,7 @@
 								<p>Lorem ipsum dolor sit amet</p>
 							</div>
 						</a>
-						<a href="<?php the_field('manual_do_laboratorio', $pageSecretaria); ?>" target="_blank" class="item d-flex">
+						<a href="<?php the_field('manual_do_laboratorio', $pageSecretaria); ?>" target="_blank" class="item d-flex align-items-center">
 							<div class="wrap">
 								<i class="icon icon-man-lab"></i>
 							</div>
@@ -371,3 +370,9 @@
 <?php
 	get_footer();
 ?>
+<script>
+	window.onload = () =>{
+		new carouselFunc ( $('.carousel-ban') );
+		new colapseCursosHome ( document.querySelector( '.principais-cursos-pad' ) );
+	}
+</script>

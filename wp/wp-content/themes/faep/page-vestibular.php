@@ -23,7 +23,7 @@
 
         <div class="content1">
           <div class="title-pad">
-            <h1><span>Contato</span></h1>
+            <h1>Contato <span></span></h1>
             <div class="item-design">
               <i class="icon icon-chapeu2"></i>
             </div>

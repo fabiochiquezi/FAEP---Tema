@@ -235,6 +235,16 @@ a{
 	height: 24px;
 	background-position: -264px -0px;
 }
+.icon-ligamos-voce{
+	width: 50px;
+	height: 45px;
+	background-position: -0px -312px;
+}
+.icon-receber-ligacao{
+	width: 58px;
+	height: 58px;
+	background-position: -250px -162px;
+}
 
 
 
@@ -267,7 +277,7 @@ a{
 	text-transform: uppercase;
 	display: block;
 	padding-top: 17px;
-	// transition: all 300ms ease;
+	transition: all 300ms ease;
 
 	// &:hover{
 	// 	background: $corPrim01;
@@ -275,10 +285,16 @@ a{
 	// 	color: #fff;
 	// }
 }
-.page-interna{
-	padding: 64px 0px;
+.button4{
+	text-transform: uppercase;
+	font-size: 18px;
+	width: 250px;
+	height: 45px;
+	border: 2px solid #000;
+	padding-top: 12px;
+	background: #fff;
+	text-align: center;
 }
-
 
 
 
@@ -460,7 +476,7 @@ a{
 	h1{
 		font-size: 32px;
 		color: $corSec01;
-		margin-bottom: 20px;
+		margin-bottom: 14px;
 		//margin-bottom: 20px;
 
 		span{
@@ -576,7 +592,7 @@ a{
 				overflow: hidden;
 			}
 			.content{
-				margin-top: 32px;
+				margin-top: 24px;
 				padding-left: 14px;
 			}
 			img{
@@ -585,10 +601,11 @@ a{
 			h4{
 				font-size: 16px;
 				text-transform: uppercase;
-				margin-bottom: 24px;
+				margin-bottom: 10px;
 				color: $corSec01;
 				height: 22px;
 				line-height: 22px;
+				font-family: $bold;
 			}
 			p{
 				font-size: 14px;
@@ -604,7 +621,7 @@ a{
 				border: none;
 				color: #777777;
 				font-size: 14px;
-				margin-bottom: 14px;
+				margin-bottom: 10px;
 				padding: 0px;
 	
 				&:last-child{
@@ -965,7 +982,8 @@ a{
 		h5{
 			font-size: 18px;
 			text-transform: uppercase;
-			margin-bottom: 10px;
+			margin-bottom: 6px;
+			line-height: 23px;
 		}
 		p{
 			font-size: 14px;
@@ -1042,7 +1060,7 @@ a{
 
 	h2{
 		text-transform: uppercase;
-		margin-bottom: 16px;
+		margin-bottom: 12px;
 		font-size: 30px;
 		font-family: $bold;
 		width: 100%;
@@ -1178,6 +1196,203 @@ a{
 
 
 
+/******* Blog *******/
+.item-blog{
+	margin: 0 auto;
+	margin-bottom: 64px;
+	display: block;
+	border: 1px solid #f0f0f0;
+	padding: 16px;
+	background: #fff;
+	max-width: 540px;
+
+	&:hover{
+		opacity: 0.7;
+
+		.button3{
+			background: $corPrim01;
+			border: 1px solid $corPrim01;
+			color: #fff;
+		}
+	}
+
+	.wrap-ban{
+		margin-bottom: 32px;
+
+		img{
+			width: 100%;
+		}
+	}
+	ul{
+		margin-bottom: 24px;
+	}
+	li{
+		margin-bottom: 8px;
+		color: $corPrim01;
+		font-size: 14px;
+
+		span{
+			color: #333333;
+			margin-right: 2px;
+		}
+	}
+
+	h3{
+		font-size: 20px;
+		margin-bottom: 24px;
+		line-height: 25px;
+	}
+	p{
+		color: #777777;
+		line-height: 25px;
+		margin-bottom: 30px;
+	}
+	.button3{
+		margin: 0 auto;
+	}
+
+	@media(min-width: 992px){
+		max-width: 100%;
+		li{
+			margin-bottom: 0px;
+			margin-left: 30px;
+
+			&:first-child{
+				margin-left: 0px;
+			}
+		}
+		.button3{
+			margin-left: 0px;
+		}
+	}
+}
+
+
+
+/******* Blog *******/
+.ligamos-voce{
+	position: relative;
+	z-index: 100;
+
+	.header{
+		background: #ff1919;
+		padding: 42px 0px;
+		cursor: pointer;
+		transition: all 250ms ease;
+
+		.button4{
+			transition: all 200ms ease;
+		}
+
+		&:hover{
+			.button4{
+				background: $corPrim01;
+				color: #fff;
+			}
+		}
+
+		p{
+			color: #333333;
+			font-size: 18px;
+			text-transform: uppercase;
+			padding-left: 18px;
+
+			span{
+				color: #fff;
+			}
+		}
+
+		.container{
+			position: relative;
+		}
+
+		.icon-receber-ligacao{
+			position: absolute;
+			right: 0;
+			bottom: -72px;
+		}
+	}
+
+	.content{
+		padding: 40px 0px 40px;
+		background: #ebebeb;
+		display: none;
+
+		h4{
+			font-size: 16px;
+			font-family: $bold;
+			color: #333333;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+		input{
+			border-radius: 0px;
+			margin-bottom: 24px;
+		}
+
+		input[type="checkbox"]{
+			width: 25px;
+			background: #fff;
+			outline: none;
+			border: none;
+			margin-bottom: 0px;
+			margin-right: 8px;
+		}
+
+		.inf{
+			width: 100%;
+
+			p{
+				color: #333333;
+				font-size: 14px;
+				margin-bottom: 18px;
+			}
+		}
+
+		.max-width{
+			max-width: 49%;
+			// width: 46%;
+			// margin: 0px 2%;
+			// margin-bottom: 24px;
+		}
+
+		.check{
+			span{
+				font-size: 12px;
+			}
+		}
+
+		.btn-enviar{
+			border-radius: 0px !important;
+			display: block;
+			margin-top: 50px;
+			width: 254px;
+			height: 50px;
+			font-size: 18px;
+			max-width: 100% !important;
+			float: right;
+		}
+
+		.erro-form p{
+			margin-top: 8px;
+			text-align: right;
+		}
+		.wrap-load{
+			position: relative;
+
+			img{
+				position: absolute;
+				right: 0px;
+				top: 10px;
+			}
+		}
+	}
+}
+
+
+
+
 .lista-contato{
 	h4{
 		font-size: 18px;
@@ -1212,21 +1427,5 @@ a{
 		&:last-child{
 			margin-bottom: 0px;
 		}
-	}
-}
-
-
-
-/******* Google Maps - Pad *******/
-.g-maps-pad{
-	position: relative;
-	top: 10px;
-	z-index: 1;
-	img{
-		width: 100%;
-	}
-
-	@media(max-width: 992px){
-		display: none;
 	}
 }

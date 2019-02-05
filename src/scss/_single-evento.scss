@@ -1,0 +1,79 @@
+//Single Post
+.single-evento{
+	padding: 0px 0px 90px;
+	background: #f7f7f7;
+
+	.cabecalho-curso{
+		margin-bottom: 64px;
+
+		@media(min-width: 992px){
+			margin-bottom: 90px;
+		}
+	}
+
+	aside{
+		.wrap{
+			max-width: 240px;
+			margin: 0 auto;
+			margin-bottom: 16px;
+
+			img{
+				width: 100%;
+			}
+		}
+		h1{
+			font-size: 22px;
+			margin-bottom: 20px;
+			font-family: $bold;
+			text-align: center;
+		}
+		.cargo{
+			font-size: 13px;
+			font-family: $bold;
+			text-align: center;
+			display: inline-block;
+			width: 100%;
+		}
+
+		@media(min-width: 992px){
+			margin-top: 70px;
+
+			.cargo{
+				margin-bottom: 16px;
+			}
+		}
+	}
+
+	main{
+		.banner{
+			margin-bottom: 35px;
+			img{
+				width: 100%;
+			}
+		}
+		h5{
+			font-size: 22px;
+			font-family: $bold;
+			margin-bottom: 30px;
+		}
+		p{
+			font-size: 15px;
+			color: #777777;
+			margin-bottom: 32px;
+			line-height: 25px;
+
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+		.content-evento{
+			margin-bottom: 58px;
+		}
+		.form{
+			.title-pad{
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+}

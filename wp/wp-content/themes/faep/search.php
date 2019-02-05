@@ -14,7 +14,7 @@
 		</div>
 	</div>
 
-	<div class="page-lista-curso principais-cursos-pad">
+	<div class="page-lista-curso principais-cursos-pad search-page">
 		<div class="container">
 			<div class="row">
 				<div class="title-pad">
@@ -26,7 +26,7 @@
 				
 				<div class="content-colapse">
 					<ul class="w-100 d-flex flex-column align-items-center flex-md-row flex-md-wrap justify-content-md-start">
-						
+						<!-- Curso Search -->
 						<?php
 							$args = array(
 									'post_type' => 'cursos',
@@ -60,13 +60,70 @@
 						<?php 
 							endwhile; else: 
 						?>
-							<p>Infelizmente não foi encontrado nem um curso com este termo.</p>	
+							<!-- <p>Infelizmente não foi encontrado nem um curso com este termo.</p>	 -->
 						<?php endif; 
 							// wp_reset_query();
 							wp_reset_postdata();
 						?>
+					</ul>		
 
-					</ul>						
+
+
+					<!-- Post Blog -->
+					<div class="content-blog d-flex flex-column align-items-center flex-lg-row justify-content-start flex-lg-wrap">
+						
+						<?php
+							$args = array(
+									'post_type' => 'post',
+									's' => $_GET['s'],
+									'posts_per_page' => -1
+							);
+							$the_query2 = new WP_Query($args)
+						?>
+						<?php
+							$loop = 0;
+							if( $the_query2->have_posts() ) : while($the_query2->have_posts()) : $the_query2->the_post();
+								$loop++; 
+						?>	
+							<a href="" class="item-blog">
+								<div class="wrap-ban">
+									<img src="<?php the_field('image_thumb'); ?>" alt="">
+								</div>
+								<div class="content">
+									<ul class="d-flex flex-column flex-lg-row">
+										<li><span>Por: </span><?php the_author(); ?></li>
+										<?php 
+											global $post;
+											$idPost = get_the_ID();
+											$postcat = get_the_category( $idPost );
+											
+											// print_r($postcat) ;  
+											
+											// if ( ! empty( $postcat ) ) {
+											// 		echo esc_html( $postcat[0]->name );   
+											// }
+											$link = get_category_link( $postcat[0]->term_id );
+										?>	
+										<li><span>Categoria :</span><?php 
+												if ( ! empty( $postcat ) ) {
+													echo esc_html( $postcat[0]->name );   
+											}						
+										?></li>
+										<li><span>Data :</span><?php 
+											$post_date = get_the_date( 'j / F / Y' ); 
+											echo $post_date; 
+										?></li>
+									</ul>
+									<h3><?php the_title(); ?></h3>
+									<p><?php the_field('desc_post'); ?></p>
+									<span class="button3">Ver mais</span>
+								</div>
+							</a>
+						<?php endwhile; else: endif; ?>								
+						<?php 
+							wp_reset_postdata();
+						?>	
+					</div>			
 				</div>
 				
 			</div>

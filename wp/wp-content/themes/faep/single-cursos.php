@@ -42,7 +42,7 @@
 		</div>
 		<div class="title-pad">
 
-			<h1>Próximos<span> Eventos</span></h1>
+			<h1><?php the_title(); ?></span></h1>
 			<p>Lorem ipsum dolor sit amet</p>
 			<div class="item-design">
 				<i class="icon icon-chapeu2"></i>
